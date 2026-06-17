@@ -1,0 +1,100 @@
+body {
+    background-color: #134271;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;           
+}
+
+#company {
+    transition: transform 1s ease-in;
+}
+
+#company:hover {
+    transform: scale(0.8);
+}
+
+/* Navigation bar  */
+li {
+    color: #FFFFFF;
+    font-size: 22px;
+    font: bold;
+    font-family: 'Calibri';
+    list-style: none;
+    transition: transform 1s ease-in;
+    }
+
+li:hover {
+    transform: scale(1);
+}
+
+/* Title */
+h2 {
+    color: #F4D2AB;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Calibri';
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    transition: color 1s ease-in;
+}
+
+h2:hover {
+    color: #ffffff;
+}
+
+/* Subtitle */
+a {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Calibri';
+    display: flex;
+    justify-content: center;
+    text-decoration-color: #F4D2AB;
+    transition: transform 1s ease-in;
+}
+
+a:hover {
+    transform: scale(1.5);
+}
+
+/* The Meal DB API images */
+#foodImage {
+    width: 400px;
+    height: 400px;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* The Meal DB API food name */
+h3 {
+    color: #F4D2AB;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Calibri';
+    align-self: center;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* The Meal DB API recipe */
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Calibri';
+    color: #FFFFFF;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Fade in The Meal DB results */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
